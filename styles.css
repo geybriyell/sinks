@@ -30,8 +30,13 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: rgb(245, 244, 244);
     text-decoration: none;
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #070707; /* Change to your desired hover color */
 }
 
 main {
