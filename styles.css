@@ -87,3 +87,28 @@ th, td {
         grid-template-columns: 1fr;
     }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    table {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
