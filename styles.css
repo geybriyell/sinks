@@ -57,3 +57,11 @@ th, td {
     align-tems: center;
     padding: 1rem;
 }
+
+/* Grid container for responsive layouts */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
