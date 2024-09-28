@@ -18,20 +18,28 @@ header, footer {
 
 nav {
     background: #9ba1a1;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    flex: 1;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav a {
     color: rgb(245, 244, 244);
     text-decoration: none;
+    padding: 10px;
+    display: inline-block;
 }
 
 /* Hover Effect */
@@ -70,8 +78,20 @@ section {
 }
 
 @media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+    
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    nav {
+        overflow-x: auto;
     }
 }
